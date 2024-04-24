@@ -139,7 +139,7 @@ public class DataImportExportAutoConfiguration {
 				Boolean.class, DEFAULT_EXPORT_ENABLED))
 			.isPresent();
 
-	static abstract class AbstractDisableGemFireShutdownHookSupport {
+	abstract static class AbstractDisableGemFireShutdownHookSupport {
 
 		boolean shouldDisableGemFireShutdownHook(@Nullable Environment environment) {
 			return disableGemFireShutdownHookPredicate.test(environment);
@@ -156,7 +156,7 @@ public class DataImportExportAutoConfiguration {
 		}
 	}
 
-	static abstract class CacheDataImporterExporterReference extends AbstractCacheDataImporterExporter {
+	abstract static class CacheDataImporterExporterReference extends AbstractCacheDataImporterExporter {
 		static final String EXPORT_ENABLED_PROPERTY_NAME =
 			AbstractCacheDataImporterExporter.CACHE_DATA_EXPORT_ENABLED_PROPERTY_NAME;
 	}

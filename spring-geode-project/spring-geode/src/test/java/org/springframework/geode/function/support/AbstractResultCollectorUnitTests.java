@@ -46,7 +46,7 @@ public class AbstractResultCollectorUnitTests {
 
 	private static <T, S> AbstractResultCollector<T, S> newResultCollector(Runnable runnable) {
 
-		return new AbstractResultCollector<T, S>() {
+		return new AbstractResultCollector<>() {
 
 			@Override
 			public synchronized S getResult() throws FunctionException {

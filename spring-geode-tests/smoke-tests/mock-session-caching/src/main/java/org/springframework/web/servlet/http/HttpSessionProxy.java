@@ -33,7 +33,7 @@ import org.springframework.util.Assert;
  * @see org.springframework.web.servlet.http.AbstractHttpSession
  * @since 1.4.0
  */
-public class HttpSessionProxy extends AbstractHttpSession {
+public final class HttpSessionProxy extends AbstractHttpSession {
 
 	public static HttpSessionProxy from(HttpSession session) {
 		return new HttpSessionProxy(session);

@@ -48,9 +48,8 @@ public class EnvironmentUsingSpringBootApplication {
 	@Bean
 	ApplicationRunner environmentRunner(Environment environment) {
 
-		return args -> {
+		return args ->
 			//System.err.printf("PROPERTY is [%s]%n", environment.getProperty("example.app.property"));
 			System.err.printf("PROPERTY is [%s]%n", this.testProperty);
-		};
 	}
 }

@@ -97,7 +97,7 @@ public class PeerCacheHealthIndicatorConfiguration {
 					CacheServerFactoryBean cacheServerFactoryBean = (CacheServerFactoryBean) bean;
 
 					ServerLoadProbe serverLoadProbe =
-						ObjectUtils.<ServerLoadProbe>get(bean, "serverLoadProbe");
+						ObjectUtils.get(bean, "serverLoadProbe");
 
 					if (serverLoadProbe != null) {
 						cacheServerFactoryBean.setServerLoadProbe(wrap(serverLoadProbe));

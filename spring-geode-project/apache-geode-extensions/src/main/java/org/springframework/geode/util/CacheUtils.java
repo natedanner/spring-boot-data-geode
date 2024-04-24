@@ -102,7 +102,7 @@ public abstract class CacheUtils {
 
 		Set<?> keys = nullSafeSet(region.keySetOnServer());
 
-		return !keys.isEmpty() ? getAll(region, keys) : Collections.emptySet();
+		return keys.isEmpty() ? Collections.emptySet() : getAll(region, keys);
 	}
 
 	/**

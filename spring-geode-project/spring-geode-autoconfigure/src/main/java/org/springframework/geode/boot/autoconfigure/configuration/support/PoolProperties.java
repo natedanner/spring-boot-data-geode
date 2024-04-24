@@ -44,7 +44,7 @@ public class PoolProperties {
 	private boolean prSingleHopEnabled = PoolFactory.DEFAULT_PR_SINGLE_HOP_ENABLED;
 	private boolean readyForEvents = DEFAULT_READY_FOR_EVENTS;
 	private boolean subscriptionEnabled = PoolFactory.DEFAULT_SUBSCRIPTION_ENABLED;
-	private boolean threadLocalConnections = false;
+	private boolean threadLocalConnections;
 
 	private int freeConnectionTimeout = PoolFactory.DEFAULT_FREE_CONNECTION_TIMEOUT;
 	private int loadConditioningInterval = PoolFactory.DEFAULT_LOAD_CONDITIONING_INTERVAL;

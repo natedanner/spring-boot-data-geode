@@ -167,7 +167,7 @@ public class SecureClusterAwareConfigurationIntegrationTests extends ForkingClie
 	@SpringBootApplication
 	@EnableClusterAware
 	@EnableEntityDefinedRegions(basePackageClasses = Book.class)
-	@Profile(("cluster-aware-with-secure-client"))
+	@Profile("cluster-aware-with-secure-client")
 	static class TestGeodeClientConfiguration {
 
 		static final String DEFAULT_TRUSTSTORE_PASSWORD = "unknown";

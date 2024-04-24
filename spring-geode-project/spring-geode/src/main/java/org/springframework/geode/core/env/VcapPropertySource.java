@@ -64,7 +64,7 @@ import org.springframework.util.StringUtils;
  * @since 1.0.0
  */
 @SuppressWarnings("unused")
-public class VcapPropertySource extends PropertySource<EnumerablePropertySource<?>> implements Iterable<String> {
+public final class VcapPropertySource extends PropertySource<EnumerablePropertySource<?>> implements Iterable<String> {
 
 	private static final String CLOUD_CACHE_TAG_NAME = "cloudcache";
 	private static final String GEMFIRE_TAG_NAME = "gemfire";

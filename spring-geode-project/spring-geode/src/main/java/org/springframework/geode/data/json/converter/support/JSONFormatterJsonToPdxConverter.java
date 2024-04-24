@@ -37,7 +37,7 @@ import org.springframework.lang.NonNull;
  */
 public class JSONFormatterJsonToPdxConverter implements JsonToPdxConverter {
 
-	private JsonToObjectConverter converter = newJsonToObjectConverter();
+    private final JsonToObjectConverter converter = newJsonToObjectConverter();
 
 	// TODO configure via an SPIs
 	private JsonToObjectConverter newJsonToObjectConverter() {

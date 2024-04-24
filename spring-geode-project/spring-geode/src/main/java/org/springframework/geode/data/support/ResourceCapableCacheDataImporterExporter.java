@@ -311,7 +311,7 @@ public abstract class ResourceCapableCacheDataImporterExporter extends AbstractC
 	 * @see org.springframework.context.EnvironmentAware
 	 * @see CacheResourceResolver
 	 */
-	protected static abstract class AbstractCacheResourceResolver extends ResourceLoaderResourceResolver
+	protected abstract static class AbstractCacheResourceResolver extends ResourceLoaderResourceResolver
 			implements ApplicationContextAware, CacheResourceResolver, EnvironmentAware {
 
 		private ApplicationContext applicationContext;
@@ -594,7 +594,7 @@ public abstract class ResourceCapableCacheDataImporterExporter extends AbstractC
 	 * @see AbstractCacheResourceResolver
 	 * @see ExportResourceResolver
 	 */
-	public static abstract class AbstractExportResourceResolver extends AbstractCacheResourceResolver
+	public abstract static class AbstractExportResourceResolver extends AbstractCacheResourceResolver
 			implements ExportResourceResolver {
 
 		/**
@@ -660,7 +660,7 @@ public abstract class ResourceCapableCacheDataImporterExporter extends AbstractC
 	 * @see AbstractCacheResourceResolver
 	 * @see ImportResourceResolver
 	 */
-	public static abstract class AbstractImportResourceResolver extends AbstractCacheResourceResolver
+	public abstract static class AbstractImportResourceResolver extends AbstractCacheResourceResolver
 			implements ImportResourceResolver {
 
 		/**

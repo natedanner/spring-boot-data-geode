@@ -57,7 +57,7 @@ public class InvocationArguments implements Iterable<Object> {
 	@Override
 	public Iterator<Object> iterator() {
 
-		return new Iterator<Object>() {
+		return new Iterator<>() {
 
 			int index = 0;
 

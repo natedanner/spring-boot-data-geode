@@ -92,11 +92,11 @@ public abstract class AbstractAutoConfiguredSecurityContextIntegrationTests
 
 	@Configuration
 	@Import(EchoClientConfiguration.class)
-	protected static abstract class BaseGemFireClientConfiguration { }
+	protected abstract static class BaseGemFireClientConfiguration { }
 
 	@Configuration
 	@Import(EchoServerConfiguration.class)
-	protected static abstract class BaseGemFireServerConfiguration {
+	protected abstract static class BaseGemFireServerConfiguration {
 
 		@Bean
 		TestSecurityManager testSecurityManager(Environment environment) {

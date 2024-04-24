@@ -76,7 +76,7 @@ public class ClusterAvailableConfiguration {
 
 	}
 
-	protected static abstract class AbstractCloudPlatformAvailableCondition
+	protected abstract static class AbstractCloudPlatformAvailableCondition
 			extends ClusterAwareConfiguration.ClusterAwareCondition {
 
 		protected abstract String getCloudPlatformName();
@@ -97,7 +97,7 @@ public class ClusterAvailableConfiguration {
 		}
 
 		@Override
-		public synchronized final boolean matches(@NonNull ConditionContext conditionContext,
+		public final synchronized boolean matches(@NonNull ConditionContext conditionContext,
 				@NonNull AnnotatedTypeMetadata typeMetadata) {
 
 			boolean match = isCloudPlatformActive(conditionContext.getEnvironment());

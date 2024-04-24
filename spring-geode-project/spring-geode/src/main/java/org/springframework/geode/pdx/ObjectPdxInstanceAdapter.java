@@ -96,7 +96,7 @@ public class ObjectPdxInstanceAdapter implements PdxInstance {
 
 	private final AtomicReference<String> resolvedIdentityFieldName = new AtomicReference<>(null);
 
-	private transient final BeanWrapper beanWrapper;
+	private final transient BeanWrapper beanWrapper;
 
 	private final Object target;
 

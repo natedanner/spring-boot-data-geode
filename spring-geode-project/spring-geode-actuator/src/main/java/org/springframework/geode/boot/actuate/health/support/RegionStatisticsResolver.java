@@ -60,12 +60,12 @@ public class RegionStatisticsResolver {
 
 		private final PartitionedRegion partitionRegion;
 
-		private float hitRatio = 0.0f;
+		private float hitRatio = 0.0F;
 
-		private long hitCount = 0L;
-		private long lastAccessedTime = 0L;
-		private long lastModifiedTime = 0L;
-		private long missCount = 0L;
+		private long hitCount;
+		private long lastAccessedTime;
+		private long lastModifiedTime;
+		private long missCount;
 
 		protected PartitionRegionCacheStatistics(Region<?, ?> region) {
 
@@ -78,7 +78,7 @@ public class RegionStatisticsResolver {
 
 		protected PartitionedRegion computeStatistics(PartitionedRegion region) {
 
-			float totalHitRatio = 0.0f;
+			float totalHitRatio = 0.0F;
 
 			int totalCount = 0;
 

@@ -32,7 +32,7 @@ import org.springframework.geode.distributed.event.MembershipEvent;
  */
 public class MemberDepartedEvent extends MembershipEvent<MemberDepartedEvent> {
 
-	private boolean crashed = false;
+	private boolean crashed;
 
 	/**
 	 * Constructs a new instance of {@link MemberDepartedEvent} initialized with the given {@link DistributionManager}.

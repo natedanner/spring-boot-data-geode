@@ -48,8 +48,8 @@ public class CacheProperties {
 	private static final boolean DEFAULT_COPY_ON_READ = false;
 	private static final boolean DEFAULT_AUTO_REGION_LOOKUP = true;
 
-	private static final float DEFAULT_CRITICAL_OFF_HEAP_PERCENTAGE = 0.0f;
-	private static final float DEFAULT_EVICTION_OFF_HEAP_PERCENTAGE = 0.0f;
+	private static final float DEFAULT_CRITICAL_OFF_HEAP_PERCENTAGE = 0.0F;
+	private static final float DEFAULT_EVICTION_OFF_HEAP_PERCENTAGE = 0.0F;
 
 	private static final String DEFAULT_LOG_LEVEL = "config";
 

@@ -726,7 +726,7 @@ public class PdxInstanceWrapperUnitTests {
 		verify(wrapper, atLeastOnce()).getDelegate();
 		verify(wrapper, times(1)).jsonFormatterToJson(eq(mockPdxInstance));
 		verify(mockObjectMapper, times(1)).readValue(eq(json), eq(Account.class));
-		verify(mockPdxInstance, times((1))).getObject();
+		verify(mockPdxInstance, times(1)).getObject();
 		verifyNoMoreInteractions(mockObjectMapper, mockPdxInstance);
 	}
 

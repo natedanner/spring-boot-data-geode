@@ -30,7 +30,7 @@ import example.app.petclinic.model.Pet;
 @OnRegion(region = "Pets")
 public interface PetServiceFunctionExecutions {
 
-	@FunctionId(("AdministerPetVaccinations"))
+	@FunctionId("AdministerPetVaccinations")
 	void administerPetVaccinations();
 
 }

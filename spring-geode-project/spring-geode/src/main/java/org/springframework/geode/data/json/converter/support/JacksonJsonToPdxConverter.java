@@ -51,9 +51,9 @@ import org.springframework.lang.Nullable;
  */
 public class JacksonJsonToPdxConverter implements JsonToPdxArrayConverter {
 
-	private JsonToPdxConverter converter = newJsonToPdxConverter();
+    private final JsonToPdxConverter converter = newJsonToPdxConverter();
 
-	private ObjectMapper objectMapper = newObjectMapper();
+    private final ObjectMapper objectMapper = newObjectMapper();
 
 	private @NonNull <T> Iterable<T> asIterable(@NonNull Iterator<T> iterator) {
 		return () -> iterator;

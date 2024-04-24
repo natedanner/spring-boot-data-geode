@@ -101,7 +101,7 @@ public class Jetty11HttpService implements HttpService {
 	}
 
 	private static String nullSafeString(String value, String defaultValue) {
-		return StringUtils.isNotBlank(value) ? value : String.valueOf(defaultValue);
+		return StringUtils.isNotBlank(value) ? value : defaultValue;
 	}
 
 	private static <T> T requireObject(T object, String message, Object... args) {
@@ -544,15 +544,15 @@ public class Jetty11HttpService implements HttpService {
 		List<Object> resolvedArguments = new ArrayList<>(arguments.length);
 
 		for (Object argument : arguments) {
-			Object resolvedArgument = (argument instanceof Supplier<?> supplier) ? supplier.get() : argument;
+			Object resolvedArgument = argument instanceof Supplier<?> supplier ? supplier.get() : argument;
 			resolvedArguments.add(resolvedArgument);
 		}
 
 		return resolvedArguments.toArray();
 	}
 
-	@SuppressWarnings("unused")
-	protected static class SafeServerWrapper extends Server {
+    @SuppressWarnings("unused")
+    protected static final class SafeServerWrapper extends Server {
 
 		public static SafeServerWrapper from(Server server) {
 			return new SafeServerWrapper(server);
@@ -615,7 +615,7 @@ public class Jetty11HttpService implements HttpService {
 		}
 	}
 
-	protected static class SafeWebApplicationWrapper extends WebAppContext {
+    protected static final class SafeWebApplicationWrapper extends WebAppContext {
 
 		protected static SafeWebApplicationWrapper from(WebAppContext webAppContext) {
 			return new SafeWebApplicationWrapper(webAppContext);

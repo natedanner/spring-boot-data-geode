@@ -71,7 +71,7 @@ public class MapMapper {
 		R apply(T t, U u, V v);
 	}
 
-	public class Source {
+    public final class Source {
 
 		private final String[] keys;
 

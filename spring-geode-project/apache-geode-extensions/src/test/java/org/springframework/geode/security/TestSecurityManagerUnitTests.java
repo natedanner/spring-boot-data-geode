@@ -39,7 +39,7 @@ import org.springframework.geode.util.GeodeConstants;
  */
 public class TestSecurityManagerUnitTests {
 
-	private TestSecurityManager securityManager = new TestSecurityManager();
+    private final TestSecurityManager securityManager = new TestSecurityManager();
 
 	private Properties newSecurityProperties(String username, String password) {
 

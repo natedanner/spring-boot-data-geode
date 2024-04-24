@@ -88,7 +88,7 @@ public abstract class AbstractCommonEventProcessingCacheListener<K, V> extends C
 		CREATE,
 		DESTROY,
 		INVALIDATE,
-		UPDATE;
+		UPDATE
 
 	}
 
@@ -98,7 +98,7 @@ public abstract class AbstractCommonEventProcessingCacheListener<K, V> extends C
 		CREATE,
 		DESTROY,
 		INVALIDATE,
-		LIVE;
+		LIVE
 
 	}
 }

@@ -109,8 +109,8 @@ public class StringAppender extends AppenderBase<ILoggingEvent> {
 
 		private static final boolean DEFAULT_REPLACE = false;
 
-		private boolean replace = false;
-		private boolean useSynchronization = false;
+		private boolean replace;
+		private boolean useSynchronization;
 
 		private Context context;
 

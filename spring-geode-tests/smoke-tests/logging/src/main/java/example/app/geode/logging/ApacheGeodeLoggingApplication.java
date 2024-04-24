@@ -65,7 +65,7 @@ import ch.qos.logback.classic.LoggerContext;
 @SuppressWarnings({ "rawtypes", "unused" })
 public class ApacheGeodeLoggingApplication {
 
-	private static boolean ENABLE_PRINT_LOG = false;
+	private static boolean enablePrintLog;
 
 	private static final StringAppender stringAppender;
 
@@ -99,7 +99,7 @@ public class ApacheGeodeLoggingApplication {
 	// the 'spring-geode-starter-logging' module.
 	public static void main(String[] args) {
 
-		ENABLE_PRINT_LOG = true;
+		enablePrintLog = true;
 
 		new SpringApplicationBuilder(ApacheGeodeLoggingApplication.class)
 			//.profiles("logging")
@@ -120,7 +120,7 @@ public class ApacheGeodeLoggingApplication {
 			this.logger.info("RUNNER RAN!");
 			this.logger.debug("DEBUG TEST");
 
-			if (ENABLE_PRINT_LOG) {
+			if (enablePrintLog) {
 				printLog();
 			}
 

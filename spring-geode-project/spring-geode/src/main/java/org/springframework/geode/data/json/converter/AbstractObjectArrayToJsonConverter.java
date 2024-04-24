@@ -40,7 +40,7 @@ public abstract class AbstractObjectArrayToJsonConverter implements ObjectArrayT
 	protected static final String END_ARRAY = "]";
 	protected static final String JSON_OBJECT_SEPARATOR = ", ";
 
-	private ObjectToJsonConverter converter = newObjectToJsonConverter();
+    private final ObjectToJsonConverter converter = newObjectToJsonConverter();
 
 	// TODO configure via an SPI
 	private @NonNull ObjectToJsonConverter newObjectToJsonConverter() {

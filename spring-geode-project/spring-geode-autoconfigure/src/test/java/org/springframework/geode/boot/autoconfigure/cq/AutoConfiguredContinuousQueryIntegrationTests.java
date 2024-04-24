@@ -177,7 +177,7 @@ public class AutoConfiguredContinuousQueryIntegrationTests extends ForkingClient
 
 		private CacheLoader<Long, TemperatureReading> temperatureReadingsLoader() {
 
-			return new CacheLoader<Long, TemperatureReading>() {
+			return new CacheLoader<>() {
 
 				@Override
 				public TemperatureReading load(LoaderHelper<Long, TemperatureReading> helper)

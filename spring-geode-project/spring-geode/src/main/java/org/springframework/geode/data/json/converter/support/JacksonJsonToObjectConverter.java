@@ -50,7 +50,7 @@ public class JacksonJsonToObjectConverter implements JsonToObjectConverter {
 
 	protected static final String AT_TYPE_FIELD_NAME = PdxInstanceWrapper.AT_TYPE_FIELD_NAME;
 
-	private ObjectMapper objectMapper = newObjectMapper();
+    private final ObjectMapper objectMapper = newObjectMapper();
 
 	/**
 	 * Constructs a new Jackson {@link ObjectMapper} to convert {@link String JSON} into an {@link Object} (POJO).

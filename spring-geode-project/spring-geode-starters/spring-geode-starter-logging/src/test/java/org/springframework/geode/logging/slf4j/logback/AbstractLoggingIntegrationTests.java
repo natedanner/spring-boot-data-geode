@@ -299,7 +299,7 @@ public abstract class AbstractLoggingIntegrationTests {
 			return new LoggingStatusListener();
 		}
 
-		private volatile boolean debug = false;
+		private volatile boolean debug;
 
 		protected boolean isDebugging() {
 			return this.debug;

@@ -30,13 +30,13 @@ import org.springframework.util.StringUtils;
 // tag::class[]
 public class PhoneNumberGenerator {
 
-	private static int CALIFORNIA_AREA_CODE = 707;
-	private static int IOWA_AREA_CODE = 319;
-	private static int MONTANA_AREA_CODE = 406;
-	private static int NEW_YORK_AREA_CODE = 914;
-	private static int OREGON_AREA_CODE = 503;
-	private static int WASHINGTON_AREA_CODE = 206;
-	private static int WISCONSIN_AREA_CODE = 608;
+    private static final int CALIFORNIA_AREA_CODE = 707;
+    private static final int IOWA_AREA_CODE = 319;
+    private static final int MONTANA_AREA_CODE = 406;
+    private static final int NEW_YORK_AREA_CODE = 914;
+    private static final int OREGON_AREA_CODE = 503;
+    private static final int WASHINGTON_AREA_CODE = 206;
+    private static final int WISCONSIN_AREA_CODE = 608;
 
 	private static final List<Integer> PHONE_NUMBER_AREA_CODES = Arrays.asList(
 		CALIFORNIA_AREA_CODE,

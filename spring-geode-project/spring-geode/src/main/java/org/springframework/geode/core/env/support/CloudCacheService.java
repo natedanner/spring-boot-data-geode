@@ -38,7 +38,7 @@ import org.springframework.util.StringUtils;
  * @see org.springframework.geode.core.env.support.Service
  * @since 1.0.0
  */
-public class CloudCacheService extends Service {
+public final class CloudCacheService extends Service {
 
 	/**
 	 * Factory method used to construct a new {@link CloudCacheService} initialized with the given {@link String name}.
@@ -165,7 +165,7 @@ public class CloudCacheService extends Service {
 		return this;
 	}
 
-	public static class Locator implements Comparable<Locator> {
+    public static final class Locator implements Comparable<Locator> {
 
 		static final int DEFAULT_LOCATOR_PORT = GemfireUtils.DEFAULT_LOCATOR_PORT;
 

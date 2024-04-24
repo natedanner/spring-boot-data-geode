@@ -30,7 +30,7 @@ import org.springframework.util.StringUtils;
  * @since 1.0.0
  */
 @SuppressWarnings("unused")
-public class User implements Comparable<User> {
+public final class User implements Comparable<User> {
 
 	private Role role;
 

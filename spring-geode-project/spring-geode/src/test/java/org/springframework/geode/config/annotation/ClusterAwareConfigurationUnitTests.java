@@ -99,8 +99,8 @@ import org.slf4j.Logger;
  */
 public class ClusterAwareConfigurationUnitTests extends IntegrationTestsSupport {
 
-	private ClusterAwareConfiguration.ClusterAwareCondition condition =
-		spy(new ClusterAwareConfiguration.ClusterAwareCondition());
+    private final ClusterAwareConfiguration.ClusterAwareCondition condition =
+            spy(new ClusterAwareConfiguration.ClusterAwareCondition());
 
 	private @NonNull InetSocketAddress newSocketAddress(@NonNull String host, int port) {
 		return new InetSocketAddress(host, port);

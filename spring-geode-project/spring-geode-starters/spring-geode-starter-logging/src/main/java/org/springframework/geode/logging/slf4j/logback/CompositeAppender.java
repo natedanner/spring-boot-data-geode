@@ -35,7 +35,7 @@ import ch.qos.logback.core.Context;
  * @see ch.qos.logback.core.AppenderBase
  * @since 1.3.0
  */
-public class CompositeAppender<T> extends AppenderBase<T> {
+public final class CompositeAppender<T> extends AppenderBase<T> {
 
 	protected static final String DEFAULT_NAME = "composite";
 

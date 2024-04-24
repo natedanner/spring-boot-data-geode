@@ -89,7 +89,7 @@ public class JsonClientCacheDataImporterExporterIntegrationTests extends Forking
 
 	private static final AtomicBoolean applicationContextClosed = new AtomicBoolean(false);
 
-	private static ConfigurableApplicationContext applicationContext = null;
+	private static ConfigurableApplicationContext applicationContext;
 
 	private static final String CUSTOMERS_JSON_RESOURCE_PATH = "data-customers.json";
 

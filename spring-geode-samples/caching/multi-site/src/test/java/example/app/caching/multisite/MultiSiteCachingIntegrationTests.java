@@ -208,7 +208,7 @@ public class MultiSiteCachingIntegrationTests extends ForkingClientServerIntegra
 	@SuppressWarnings("unused")
 	static class CustomersByNameCacheListener extends CacheListenerAdapter<String, Customer> {
 
-		private boolean entryEventArrived = false;
+		private boolean entryEventArrived;
 
 		@Override
 		public synchronized void afterCreate(EntryEvent<String, Customer> event) {

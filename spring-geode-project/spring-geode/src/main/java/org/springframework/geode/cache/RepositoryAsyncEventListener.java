@@ -378,7 +378,7 @@ public class RepositoryAsyncEventListener<T, ID> implements AsyncEventListener {
 	 * @param <ID> {@link Class type} of the identifier of the entity.
 	 * @see AsyncEventOperationRepositoryFunction
 	 */
-	public static abstract class AbstractAsyncEventOperationRepositoryFunction<T, ID>
+	public abstract static class AbstractAsyncEventOperationRepositoryFunction<T, ID>
 			implements AsyncEventOperationRepositoryFunction<T, ID> {
 
 		private final RepositoryAsyncEventListener<T, ID> listener;

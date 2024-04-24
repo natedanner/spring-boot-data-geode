@@ -155,7 +155,7 @@ public abstract class MembershipEvent<T extends MembershipEvent<T>> extends Even
 		MEMBER_JOINED,
 		MEMBER_SUSPECT,
 		QUORUM_LOST,
-		UNQUALIFIED;
+		UNQUALIFIED
 
 	}
 }

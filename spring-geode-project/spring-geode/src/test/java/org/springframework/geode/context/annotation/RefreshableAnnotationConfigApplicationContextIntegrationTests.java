@@ -58,8 +58,6 @@ public class RefreshableAnnotationConfigApplicationContextIntegrationTests {
 			assertThat(testNameBean).isNotNull();
 			assertThat(testNameBean.getName()).isEqualTo("TestName");
 
-			applicationContext.close();
-
 			assertThat(applicationContext.isActive()).isFalse();
 			assertThat(applicationContext.isRunning()).isFalse();
 
